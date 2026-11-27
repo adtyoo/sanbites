@@ -825,7 +825,7 @@ st.markdown(html("""
       <a class="nav-cta" href="#media-sosial" target="_self"><span class="cta-txt">Pesan Sekarang<small>Sandwich segar, siap santap</small></span><span class="cta-go">↗</span></a>
       <div class="socials">
         <a href="https://www.instagram.com/sanbites_san?utm_source=ig_web_button_share_sheet&bqrl=ZDNlZDc0MzIxNw==" target="_blank">📸 Instagram</a>
-        <a href="https://www.tiktok.com/" target="_blank">🎵 TikTok</a>
+        <a href="https://www.tiktok.com/@sandbites1?_r=1&_t=ZS-9Bkxi5PG3rq" target="_blank">🎵 TikTok</a>
       </div>
     </div>
   </div>
@@ -861,7 +861,7 @@ st.markdown(html("""
   </section>
   <div class="hero-social">
     <a href="https://www.instagram.com/sanbites_san?utm_source=ig_web_button_share_sheet&bqrl=ZDNlZDc0MzIxNw==" target="_blank" title="Instagram">📸</a>
-    <a href="https://www.tiktok.com/" target="_blank" title="TikTok">🎵</a>
+    <a href="https://www.tiktok.com/@sandbites1?_r=1&_t=ZS-9Bkxi5PG3rq" target="_blank" title="TikTok">🎵</a>
   </div>
 </div>
 
@@ -906,7 +906,7 @@ st.markdown(html("""
         <p>Roti lembut dengan isian telur yang gurih dan nikmat. Pilihan pas untuk camilan praktis.</p>
         <div class="product-bottom">
           <div class="price">Rp10.000 <small>/ porsi</small></div>
-          <a class="order-link" href="https://www.instagram.com/" target="_blank">Pesan ↗</a>
+          <a class="order-link" href="https://www.instagram.com/sanbites_san?utm_source=ig_web_button_share_sheet&bqrl=ZDNlZDc0MzIxNw==" target="_blank">Pesan ↗</a>
         </div>
       </div>
     </div>
@@ -919,7 +919,7 @@ st.markdown(html("""
         <p>Kombinasi telur dan daging yang gurih dalam roti lembut. Cocok untuk mengisi energimu.</p>
         <div class="product-bottom">
           <div class="price">Rp17.000 <small>/ porsi</small></div>
-          <a class="order-link" href="https://www.instagram.com/" target="_blank">Pesan ↗</a>
+          <a class="order-link" href="https://www.instagram.com/sanbites_san?utm_source=ig_web_button_share_sheet&bqrl=ZDNlZDc0MzIxNw==" target="_blank">Pesan ↗</a>
         </div>
       </div>
     </div>
@@ -986,8 +986,8 @@ st.markdown(html("""
       <h2>Yuk, jadi bagian dari <em>Sanbites!</em></h2>
       <p>Ikuti akun media sosial kami untuk info menu, promo, dan kabar terbaru dari Sanbites.</p>
       <div class="btn-row" style="animation:none">
-        <a class="btn hot" href="https://www.instagram.com/" target="_blank">Instagram ↗</a>
-        <a class="btn ghost" href="https://www.tiktok.com/" target="_blank">TikTok ↗</a>
+        <a class="btn hot" href="https://www.instagram.com/sanbites_san?utm_source=ig_web_button_share_sheet&bqrl=ZDNlZDc0MzIxNw==" target="_blank">Instagram ↗</a>
+        <a class="btn ghost" href="https://www.tiktok.com/@sandbites1?_r=1&_t=ZS-9Bkxi5PG3rq" target="_blank">TikTok ↗</a>
       </div>
     </div>
     <div class="cta-art"><span>🥪</span></div>
