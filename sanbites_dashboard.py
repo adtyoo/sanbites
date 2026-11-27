@@ -293,33 +293,505 @@ header, footer { visibility:hidden; }
 .footer b span { color:var(--tomato); }
 
 /* ---------- Responsif ---------- */
-@media (max-width:900px) {
-  .features { grid-template-columns:repeat(2,1fr); }
-  .moments, .steps { grid-template-columns:1fr; }
-  .cta { grid-template-columns:1fr; padding:40px 28px; }
-  .hero { padding:50px 34px 70px; }
-}
-@media (max-width:760px) {
-  .block-container { padding-top:5.6rem; }
-  .navbar { padding:10px 10px 10px 18px; }
-  .navlinks a.link { padding:8px 9px; font-size:13px; }
-  .nav-cta { display:none; }
-  .hero { grid-template-columns:1fr; padding:40px 24px 64px; }
-  .plate-wrap { order:-1; }
-  .badge { width:88px; height:88px; right:0; }
-  .badge strong { font-size:19px; }
-  .products { grid-template-columns:1fr; }
-  .hero-stats { gap:20px; }
-}
-@media (max-width:520px) {
-  .brand { font-size:20px; }
-  .navlinks a.link:nth-child(2) { display:none; }
-  .features { grid-template-columns:1fr; }
-}
 
 @media (prefers-reduced-motion: reduce) {
   * { animation:none !important; transition:none !important; scroll-behavior:auto !important; }
 }
+
+
+/* ---------- RESPONSIVE TABLET ---------- */
+@media (max-width: 900px) {
+  .block-container {
+    max-width: 100%;
+    padding-left: 28px;
+    padding-right: 28px;
+  }
+
+  .features {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .moments {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .steps {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    padding: 45px 32px 70px;
+    gap: 15px;
+  }
+
+  .cta {
+    grid-template-columns: 1fr;
+    padding: 42px 32px;
+  }
+
+  .cta-art {
+    height: 260px;
+  }
+}
+
+
+/* ---------- RESPONSIVE MOBILE ---------- */
+@media (max-width: 760px) {
+
+  /* Mencegah scroll horizontal */
+  html, body, .stApp {
+    overflow-x: hidden !important;
+    width: 100%;
+  }
+
+  .block-container {
+    max-width: 100% !important;
+    padding: 5.6rem 16px 2rem !important;
+  }
+
+  /* Hero mobile */
+  .hero-wrap {
+    margin-bottom: 55px;
+  }
+
+  .hero {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    min-height: auto;
+    padding: 30px 20px 38px;
+    border-radius: 28px;
+    gap: 25px;
+  }
+
+  .hero-text {
+    width: 100%;
+  }
+
+  .hero h1 {
+    font-size: clamp(37px, 9vw, 48px);
+    line-height: 1.1;
+    letter-spacing: -1.5px;
+    margin: 18px 0 14px;
+  }
+
+  .hero p {
+    font-size: 14px;
+    line-height: 1.7;
+    margin: 0 auto 22px;
+  }
+
+  .eyebrow {
+    font-size: 10px;
+    letter-spacing: 1.3px;
+  }
+
+  .btn-row {
+    justify-content: center;
+    gap: 9px;
+  }
+
+  .btn {
+    font-size: 13px;
+    padding: 13px 19px;
+  }
+
+  .hero-stats {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 22px;
+    margin-top: 25px;
+  }
+
+  .hero-stats div b {
+    font-size: 23px;
+  }
+
+  .hero-stats div span {
+    font-size: 10px;
+  }
+
+  /* Ilustrasi sandwich */
+  .plate-wrap {
+    order: -1;
+    width: 100%;
+    min-height: 240px;
+  }
+
+  .plate {
+    width: min(240px, 65vw);
+  }
+
+  .plate-emoji {
+    font-size: 120px;
+  }
+
+  .float {
+    font-size: 32px;
+  }
+
+  .badge {
+    width: 76px;
+    height: 76px;
+    right: 2%;
+    top: 0;
+  }
+
+  .badge strong {
+    font-size: 17px;
+  }
+
+  .badge small {
+    font-size: 8px;
+  }
+
+  .hero-social a {
+    width: 44px;
+    height: 44px;
+    font-size: 17px;
+  }
+
+  /* Marquee */
+  .marquee {
+    margin-top: 35px;
+    padding: 13px 0;
+    border-radius: 14px;
+  }
+
+  .marquee-track span {
+    font-size: 12px;
+    padding: 0 17px;
+  }
+
+  /* Section */
+  .section {
+    padding: 55px 0 5px;
+    scroll-margin-top: 90px;
+  }
+
+  .section-head {
+    margin-bottom: 27px;
+  }
+
+  .section-kicker {
+    font-size: 9px;
+    letter-spacing: 1.5px;
+  }
+
+  .section-title {
+    font-size: clamp(27px, 7vw, 36px);
+  }
+
+  .section-desc {
+    font-size: 13px;
+    padding: 0 8px;
+  }
+
+  /* Keunggulan */
+  .features {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .feature {
+    padding: 20px;
+    border-radius: 19px;
+  }
+
+  .feature .icon {
+    width: 47px;
+    height: 47px;
+    font-size: 23px;
+    margin-bottom: 12px;
+  }
+
+  /* Produk */
+  .products {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .product-card {
+    border-radius: 24px;
+  }
+
+  .product-art {
+    height: 190px;
+    font-size: 95px;
+  }
+
+  .product-info {
+    padding: 21px 19px 23px;
+  }
+
+  .product-info h3 {
+    font-size: 22px;
+  }
+
+  .product-info p {
+    font-size: 13px;
+    min-height: auto;
+  }
+
+  .product-bottom {
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 17px;
+    padding-top: 15px;
+  }
+
+  .price {
+    font-size: 25px;
+  }
+
+  .order-link {
+    font-size: 12px;
+    padding: 12px 17px;
+  }
+
+  /* Cara pesan */
+  .steps {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .step {
+    padding: 27px 23px;
+    border-radius: 22px;
+  }
+
+  .step .num {
+    font-size: 70px;
+  }
+
+  /* Momen */
+  .moments {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .moment-art {
+    height: 175px;
+    border-radius: 22px;
+  }
+
+  .moment h4 {
+    font-size: 19px;
+    margin-top: 15px;
+  }
+
+  /* FAQ */
+  .faq details {
+    padding: 4px 17px;
+    border-radius: 16px;
+  }
+
+  .faq summary {
+    font-size: 13px;
+    gap: 10px;
+  }
+
+  .faq details p {
+    font-size: 13px;
+  }
+
+  /* CTA */
+  .cta {
+    grid-template-columns: 1fr;
+    padding: 30px 20px;
+    gap: 24px;
+    border-radius: 27px;
+  }
+
+  .cta h2 {
+    font-size: 32px;
+  }
+
+  .cta p {
+    font-size: 13px;
+  }
+
+  .cta-art {
+    height: 190px;
+    font-size: 105px;
+    border-radius: 22px;
+  }
+
+  /* Footer */
+  .footer {
+    margin-top: 45px;
+    padding-top: 28px;
+    font-size: 11px;
+  }
+}
+
+/* ---------- MOBILE KECIL ---------- */
+@media (max-width: 380px) {
+
+  .block-container {
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+  }
+
+  .hero {
+    padding: 25px 15px 32px;
+  }
+
+  .hero h1 {
+    font-size: 35px;
+  }
+
+  .hero-stats {
+    gap: 13px;
+  }
+
+  .product-bottom {
+    align-items: flex-start;
+  }
+
+  .order-link {
+    padding: 10px 13px;
+  }
+}
+
+/* ---------- NAVIGASI: elemen khusus drawer (disembunyikan di laptop) ---------- */
+.nav-toggle, .hamburger, .drawer-head, .drawer-label, .sidebar-overlay, .socials { display:none; }
+.drawer-foot { display:contents; }
+.stApp .btn, .stApp .navbar a, .stApp .order-link, .stApp .hero-social a { text-decoration:none !important; }
+.navlinks a.link { display:flex; align-items:center; gap:6px; }
+.navlinks a.link small, .navlinks a.link .arrow { display:none; }
+.navlinks a.link b { font-weight:700; }
+.navlinks a.link.active { background:#fbe9d3; color:var(--tomato-d); }
+
+.nav-cta .cta-txt small, .nav-cta .cta-go { display:none; }
+.nav-cta .cta-txt::after { content:" ↗"; }
+@media (max-width:1080px) { .nav-cta .cta-txt::after { content:none; } .nav-cta .cta-txt small { display:block; } .nav-cta .cta-go { display:flex; } }
+
+/* ---------- SIDEBAR MOBILE & TABLET ---------- */
+@media (max-width: 1080px) {
+  /* Penting: navbar tidak boleh punya transform / backdrop-filter,
+     karena membuat sidebar "fixed" terkurung di dalam navbar. */
+  .navbar {
+    top:10px; left:12px; right:12px; width:auto; transform:none; animation:none;
+    padding:9px 9px 9px 20px; border:0; border-radius:22px;
+    background:transparent; box-shadow:none; backdrop-filter:none; -webkit-backdrop-filter:none;
+  }
+  .navbar::before {
+    content:""; position:absolute; inset:0; z-index:-1; border-radius:inherit;
+    background:rgba(255,253,248,.88); border:1px solid var(--line); box-shadow:0 10px 30px #392b1717;
+    backdrop-filter:blur(18px) saturate(1.4); -webkit-backdrop-filter:blur(18px) saturate(1.4);
+  }
+  .brand { font-size:21px; }
+  .section { scroll-margin-top:90px; }
+
+  /* Tombol hamburger */
+  .nav-toggle { display:block; position:absolute; right:9px; top:50%; width:46px; height:46px; margin:-23px 0 0; opacity:0; z-index:2; cursor:pointer; }
+  .hamburger {
+    display:flex; flex-direction:column; align-items:flex-end; justify-content:center; gap:5px;
+    width:46px; height:46px; padding-right:12px; box-sizing:border-box; border-radius:15px;
+    background:var(--green); box-shadow:0 8px 18px #25423340; cursor:pointer; margin:0; transition:transform .25s var(--ease);
+  }
+  .hamburger span { display:block; width:22px; height:2.5px; border-radius:4px; background:#fff4de; transition:width .3s var(--ease); }
+  .hamburger span:nth-child(2) { width:15px; background:var(--mustard); }
+  .hamburger span:nth-child(3) { width:19px; }
+  .nav-toggle:active + .hamburger { transform:scale(.92); }
+  .nav-toggle:focus-visible + .hamburger { outline:3px solid var(--tomato); outline-offset:2px; }
+
+  /* Latar gelap */
+  .sidebar-overlay {
+    display:block; position:fixed; top:0; left:0; width:100vw; height:100vh; height:100dvh; margin:0; z-index:10001;
+    background:#10201888; backdrop-filter:blur(5px); -webkit-backdrop-filter:blur(5px);
+    opacity:0; visibility:hidden; cursor:pointer; transition:opacity .4s ease, visibility .4s;
+  }
+
+  /* Panel sidebar */
+  .navlinks {
+    position:fixed; top:0; right:0; z-index:10002; box-sizing:border-box;
+    width:min(86vw, 360px); height:100vh; height:100dvh;
+    display:flex; flex-direction:column; align-items:stretch; gap:6px;
+    padding:calc(18px + env(safe-area-inset-top)) 18px calc(18px + env(safe-area-inset-bottom));
+    overflow-x:hidden; overflow-y:auto; overscroll-behavior:contain; scrollbar-width:none;
+    border-radius:32px 0 0 32px;
+    background:
+      radial-gradient(380px 260px at 100% 0%, #f4b94233, transparent 70%),
+      radial-gradient(340px 300px at 0% 100%, #e8612c2e, transparent 70%),
+      linear-gradient(165deg,#2c4e3d 0%,#1c3328 100%);
+    transform:translateX(105%); visibility:hidden;
+    transition:transform .5s var(--ease), visibility .5s, box-shadow .5s;
+  }
+  .navlinks::-webkit-scrollbar { display:none; }
+  .navlinks > * { flex-shrink:0; }
+
+  .drawer-head { display:flex; align-items:center; justify-content:space-between; gap:12px; padding:0 2px 16px 6px; border-bottom:1px solid #ffffff1c; }
+  .drawer-brand { font-family:'Fraunces',serif; font-size:25px; font-weight:800; letter-spacing:-1px; color:#fff8ec; line-height:1.1; }
+  .drawer-brand em { font-style:normal; color:#ff8a54; }
+  .drawer-brand small { display:block; margin-top:5px; font-family:'DM Sans',sans-serif; font-size:11px; font-weight:500; letter-spacing:.6px; color:#b9cdbd; }
+  .drawer-close {
+    display:flex; align-items:center; justify-content:center; width:44px; height:44px; margin:0; flex-shrink:0;
+    border-radius:50%; background:#ffffff14; border:1px solid #ffffff26; color:#fff; cursor:pointer;
+    font-size:26px; font-weight:400; line-height:1; transition:background .3s, transform .35s var(--ease);
+  }
+  .drawer-close:hover { background:var(--tomato); transform:rotate(90deg); }
+  .drawer-label { display:block; padding:12px 8px 2px; font-size:10px; font-weight:800; letter-spacing:2.5px; text-transform:uppercase; color:var(--mustard); }
+
+  .navlinks a.link {
+    display:flex; align-items:center; gap:13px; padding:8px 12px 8px 8px; border-radius:18px;
+    border:1px solid transparent; background:transparent; color:#fff8ec !important; text-decoration:none;
+  }
+  .navlinks a.link .ico { display:flex; align-items:center; justify-content:center; width:42px; height:42px; flex-shrink:0; border-radius:14px; background:#ffffff14; font-size:19px; transition:transform .35s var(--ease), background .3s; }
+  .navlinks a.link .txt { display:flex; flex-direction:column; flex:1; min-width:0; line-height:1.3; }
+  .navlinks a.link b { font-size:15px; }
+  .navlinks a.link small { display:block; font-size:11.5px; font-weight:500; color:#a9c0ae; }
+  .navlinks a.link .arrow { display:block; font-size:22px; font-weight:400; color:#ffffff59; transition:transform .35s var(--ease); }
+  .navlinks a.link:hover, .navlinks a.link:active { background:#ffffff12; transform:none; }
+  .navlinks a.link:hover .ico { transform:rotate(-8deg) scale(1.06); }
+  .navlinks a.link:hover .arrow { transform:translateX(4px); }
+  .navlinks a.link.active { background:#fff8ec; color:var(--green) !important; box-shadow:0 12px 26px #0000002e; }
+  .navlinks a.link.active .ico { background:var(--mustard); }
+  .navlinks a.link.active small { color:var(--muted); }
+  .navlinks a.link.active .arrow { color:var(--tomato); }
+
+  .drawer-foot { display:flex; flex-direction:column; gap:10px; margin-top:auto; padding-top:16px; }
+  .navlinks .nav-cta {
+    display:flex; align-items:center; justify-content:space-between; gap:12px; margin:0; padding:15px 15px 15px 20px;
+    border-radius:20px; background:linear-gradient(135deg,#f0713a,#d4531f); text-decoration:none; box-shadow:0 14px 28px #e8612c4d;
+  }
+  .nav-cta .cta-txt { display:flex; flex-direction:column; line-height:1.35; font-size:15px; }
+  .nav-cta .cta-txt small { font-size:11px; font-weight:500; opacity:.9; }
+  .nav-cta .cta-go { display:flex; align-items:center; justify-content:center; width:38px; height:38px; border-radius:50%; background:#fff; color:var(--tomato-d); font-size:17px; }
+  .socials { display:grid; grid-template-columns:1fr 1fr; gap:10px; }
+  .navlinks .socials a { display:block; text-align:center; padding:12px; border-radius:15px; border:1px solid #ffffff2b; color:#fff8ec !important; font-size:13px; font-weight:700; text-decoration:none; }
+  .navlinks .socials a:hover { background:#ffffff14; }
+
+  /* ---------- Saat terbuka ---------- */
+  .nav-toggle:checked ~ .navlinks { transform:none; visibility:visible; box-shadow:-24px 0 60px #0b1a1166; }
+  .nav-toggle:checked ~ .sidebar-overlay { opacity:1; visibility:visible; }
+  .nav-toggle:checked ~ .navlinks > * { animation:drawerIn .55s var(--ease) both; }
+  .nav-toggle:checked ~ .navlinks > :nth-child(3) { animation-delay:.05s; }
+  .nav-toggle:checked ~ .navlinks > :nth-child(4) { animation-delay:.09s; }
+  .nav-toggle:checked ~ .navlinks > :nth-child(5) { animation-delay:.13s; }
+  .nav-toggle:checked ~ .navlinks > :nth-child(6) { animation-delay:.17s; }
+  .nav-toggle:checked ~ .navlinks > :nth-child(7) { animation-delay:.21s; }
+  .nav-toggle:checked ~ .navlinks > :nth-child(8) { animation-delay:.25s; }
+  .nav-toggle:checked ~ .navlinks > :nth-child(9) { animation-delay:.29s; }
+  /* Kunci scroll halaman di belakang sidebar */
+  .stApp:has(.nav-toggle:checked) [data-testid="stMain"] { overflow:hidden !important; }
+}
+@keyframes drawerIn { from {opacity:0; transform:translateX(34px);} to {opacity:1; transform:none;} }
+
+/* Layar pendek: rapatkan isi sidebar */
+@media (max-width:1080px) and (max-height:760px) {
+  .navlinks { gap:3px; }
+  .navlinks a.link { padding-top:5px; padding-bottom:5px; }
+  .navlinks a.link .ico { width:36px; height:36px; border-radius:12px; font-size:17px; }
+  .drawer-head { padding-bottom:10px; }
+  .drawer-label { padding-top:6px; }
+  .drawer-foot { padding-top:10px; gap:8px; }
+  .navlinks .nav-cta { padding-top:10px; padding-bottom:10px; }
+  .socials a { padding:9px !important; }
+}
+
 </style>
 """), unsafe_allow_html=True)
 
@@ -328,15 +800,38 @@ header, footer { visibility:hidden; }
 # KONTEN
 # =====================================================================
 st.markdown(html("""
+
 <div class="navbar">
   <div class="brand">SAN<span>BITES</span> 🥪</div>
+
+  <!-- Tombol hamburger -->
+  <input type="checkbox" id="mobile-menu-toggle" class="nav-toggle" aria-label="Buka menu navigasi">
+  <label for="mobile-menu-toggle" class="hamburger"><span></span><span></span><span></span></label>
+
+  <!-- Navigasi (jadi sidebar di HP & tablet) -->
   <div class="navlinks">
-    <a class="link" href="#beranda" target="_self">Beranda</a>
-    <a class="link" href="#keunggulan" target="_self">Keunggulan</a>
-    <a class="link" href="#produk" target="_self">Menu</a>
-    <a class="link" href="#cara-pesan" target="_self">Cara Pesan</a>
-    <a class="nav-cta" href="#media-sosial" target="_self">Pesan Sekarang</a>
+    <div class="drawer-head">
+      <div class="drawer-brand">SAN<em>BITES</em> 🥪<small>Fresh • Simple • Delicious</small></div>
+      <label for="mobile-menu-toggle" class="drawer-close" title="Tutup menu">×</label>
+    </div>
+    <div class="drawer-label">Jelajahi</div>
+    <a class="link" href="#beranda" target="_self"><span class="ico">🏠</span><span class="txt"><b>Beranda</b><small>Halaman utama</small></span><span class="arrow">›</span></a>
+    <a class="link" href="#keunggulan" target="_self"><span class="ico">✨</span><span class="txt"><b>Keunggulan</b><small>Kenapa pilih kami</small></span><span class="arrow">›</span></a>
+    <a class="link" href="#produk" target="_self"><span class="ico">🥪</span><span class="txt"><b>Menu</b><small>Mulai Rp10.000</small></span><span class="arrow">›</span></a>
+    <a class="link" href="#cara-pesan" target="_self"><span class="ico">🛒</span><span class="txt"><b>Cara Pesan</b><small>Cukup 3 langkah</small></span><span class="arrow">›</span></a>
+    <a class="link" href="#momen" target="_self"><span class="ico">☀️</span><span class="txt"><b>Momen</b><small>Teman setiap waktu</small></span><span class="arrow">›</span></a>
+    <a class="link" href="#faq" target="_self"><span class="ico">❓</span><span class="txt"><b>FAQ</b><small>Pertanyaan umum</small></span><span class="arrow">›</span></a>
+    <div class="drawer-foot">
+      <a class="nav-cta" href="#media-sosial" target="_self"><span class="cta-txt">Pesan Sekarang<small>Sandwich segar, siap santap</small></span><span class="cta-go">↗</span></a>
+      <div class="socials">
+        <a href="https://www.instagram.com/sanbites_san?utm_source=ig_web_button_share_sheet&bqrl=ZDNlZDc0MzIxNw==" target="_blank">📸 Instagram</a>
+        <a href="https://www.tiktok.com/" target="_blank">🎵 TikTok</a>
+      </div>
+    </div>
   </div>
+
+  <!-- Latar gelap, ketuk untuk menutup -->
+  <label for="mobile-menu-toggle" class="sidebar-overlay"></label>
 </div>
 
 <div id="beranda" class="hero-wrap">
@@ -365,7 +860,7 @@ st.markdown(html("""
     </div>
   </section>
   <div class="hero-social">
-    <a href="https://www.instagram.com/" target="_blank" title="Instagram">📸</a>
+    <a href="https://www.instagram.com/sanbites_san?utm_source=ig_web_button_share_sheet&bqrl=ZDNlZDc0MzIxNw==" target="_blank" title="Instagram">📸</a>
     <a href="https://www.tiktok.com/" target="_blank" title="TikTok">🎵</a>
   </div>
 </div>
@@ -505,3 +1000,57 @@ st.markdown(html("""
   © 2026 Sanbites. Made with love and good taste.
 </div>
 """), unsafe_allow_html=True)
+
+# =====================================================================
+# SCRIPT SIDEBAR
+# Tutup otomatis setelah menu dipilih, tombol Esc, geser ke kanan,
+# dan penanda menu yang sedang dibuka.
+# =====================================================================
+SCRIPT = """
+<script>
+(() => {
+  const win = window.parent, doc = win.document;
+  if (win.__sanbitesNav) return;
+  win.__sanbitesNav = true;
+
+  const toggle = () => doc.getElementById("mobile-menu-toggle");
+  const close = () => { const t = toggle(); if (t) t.checked = false; };
+
+  // Tandai menu sesuai bagian halaman yang terlihat
+  const spy = () => {
+    const links = [...doc.querySelectorAll(".navlinks a.link")];
+    let current = links[0];
+    links.forEach(a => {
+      const el = doc.getElementById(a.getAttribute("href").slice(1))
+              || doc.getElementById("user-content-" + a.getAttribute("href").slice(1));
+      if (el && el.getBoundingClientRect().top <= win.innerHeight * 0.35) current = a;
+    });
+    links.forEach(a => a.classList.toggle("active", a === current));
+  };
+
+  doc.addEventListener("click", e => {
+    if (e.target.closest(".navlinks a")) close();
+  });
+  doc.addEventListener("keydown", e => { if (e.key === "Escape") close(); });
+
+  let x = 0, y = 0;
+  doc.addEventListener("touchstart", e => {
+    x = e.touches[0].clientX; y = e.touches[0].clientY;
+  }, { passive: true });
+  doc.addEventListener("touchend", e => {
+    const dx = e.changedTouches[0].clientX - x, dy = e.changedTouches[0].clientY - y;
+    if (e.target.closest(".navlinks, .sidebar-overlay") && dx > 70 && Math.abs(dy) < 60) close();
+  }, { passive: true });
+
+  doc.addEventListener("scroll", spy, { capture: true, passive: true });
+  spy();
+  setTimeout(spy, 800);
+})();
+</script>
+"""
+
+try:
+    st.html(SCRIPT, unsafe_allow_javascript=True)   # Streamlit versi baru
+except TypeError:
+    import streamlit.components.v1 as components    # Streamlit versi lama
+    components.html(SCRIPT, height=0)
