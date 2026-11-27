@@ -277,6 +277,8 @@ header, footer { visibility:hidden; }
 .cta h2 { font-family:'Fraunces',serif; font-weight:800; font-size:clamp(30px,4.2vw,46px); line-height:1.1; letter-spacing:-1px; margin:0 0 14px; color:#fff; }
 .cta h2 em { color:var(--mustard); font-style:italic; }
 .cta p { color:#d6e4d6; line-height:1.8; margin:0 0 26px; }
+.btn.wa { background:#1f9d55; border-color:#1f9d55; color:#fff !important; box-shadow:0 14px 26px #00000030; }
+.btn.wa:hover { background:#188447; border-color:#188447; transform:translateY(-3px); }
 .cta .btn.ghost { background:transparent; color:#fff !important; border-color:#ffffff80; }
 .cta .btn.ghost:hover { background:#fff; color:var(--green) !important; }
 .cta-art {
@@ -763,6 +765,8 @@ header, footer { visibility:hidden; }
   .socials { display:grid; grid-template-columns:1fr 1fr; gap:10px; }
   .navlinks .socials a { display:block; text-align:center; padding:12px; border-radius:15px; border:1px solid #ffffff2b; color:#fff8ec !important; font-size:13px; font-weight:700; text-decoration:none; }
   .navlinks .socials a:hover { background:#ffffff14; }
+  .navlinks .socials a.wa { grid-column:1 / -1; background:#1f9d55; border-color:#1f9d55; }
+  .navlinks .socials a.wa:hover { background:#188447; }
 
   /* ---------- Saat terbuka ---------- */
   .nav-toggle:checked ~ .navlinks { transform:none; visibility:visible; box-shadow:-24px 0 60px #0b1a1166; }
@@ -822,8 +826,9 @@ st.markdown(html("""
     <a class="link" href="#momen" target="_self"><span class="ico">☀️</span><span class="txt"><b>Momen</b><small>Teman setiap waktu</small></span><span class="arrow">›</span></a>
     <a class="link" href="#faq" target="_self"><span class="ico">❓</span><span class="txt"><b>FAQ</b><small>Pertanyaan umum</small></span><span class="arrow">›</span></a>
     <div class="drawer-foot">
-      <a class="nav-cta" href="#media-sosial" target="_self"><span class="cta-txt">Pesan Sekarang<small>Sandwich segar, siap santap</small></span><span class="cta-go">↗</span></a>
+      <a class="nav-cta" href="https://wa.me/6289636093623?text=Halo%20Kak%20Adityo%2C%20saya%20mau%20pesan%20sandwich%20Sanbites." target="_blank"><span class="cta-txt">Pesan Sekarang<small>Chat WhatsApp Adityo</small></span><span class="cta-go">↗</span></a>
       <div class="socials">
+        <a class="wa" href="https://wa.me/6289636093623?text=Halo%20Kak%20Adityo%2C%20saya%20mau%20pesan%20sandwich%20Sanbites." target="_blank">💬 WhatsApp 0896-3609-3623</a>
         <a href="https://www.instagram.com/sanbites_san?utm_source=ig_web_button_share_sheet&bqrl=ZDNlZDc0MzIxNw==" target="_blank">📸 Instagram</a>
         <a href="https://www.tiktok.com/@sandbites1?_r=1&_t=ZS-9Bkxi5PG3rq" target="_blank">🎵 TikTok</a>
       </div>
@@ -860,6 +865,7 @@ st.markdown(html("""
     </div>
   </section>
   <div class="hero-social">
+    <a href="https://wa.me/6289636093623?text=Halo%20Kak%20Adityo%2C%20saya%20mau%20pesan%20sandwich%20Sanbites." target="_blank" title="WhatsApp Adityo">💬</a>
     <a href="https://www.instagram.com/sanbites_san?utm_source=ig_web_button_share_sheet&bqrl=ZDNlZDc0MzIxNw==" target="_blank" title="Instagram">📸</a>
     <a href="https://www.tiktok.com/@sandbites1?_r=1&_t=ZS-9Bkxi5PG3rq" target="_blank" title="TikTok">🎵</a>
   </div>
@@ -886,7 +892,7 @@ st.markdown(html("""
     <div class="feature reveal"><div class="icon">🌿</div><h4>Segar &amp; Higienis</h4><p>Disiapkan dengan bahan pilihan.</p></div>
     <div class="feature reveal"><div class="icon">⚡</div><h4>Cepat Disiapkan</h4><p>Lapar datang, sandwich siap.</p></div>
     <div class="feature reveal"><div class="icon">😋</div><h4>Cocok Semua Usia</h4><p>Disukai anak-anak sampai dewasa.</p></div>
-    <div class="feature reveal"><div class="icon">💬</div><h4>Pesan Mudah</h4><p>Hubungi kami lewat media sosial.</p></div>
+    <div class="feature reveal"><div class="icon">💬</div><h4>Pesan Mudah</h4><p>Chat kami lewat WhatsApp.</p></div>
   </div>
 </section>
 
@@ -906,7 +912,7 @@ st.markdown(html("""
         <p>Roti lembut dengan isian telur yang gurih dan nikmat. Pilihan pas untuk camilan praktis.</p>
         <div class="product-bottom">
           <div class="price">Rp10.000 <small>/ porsi</small></div>
-          <a class="order-link" href="https://www.instagram.com/sanbites_san?utm_source=ig_web_button_share_sheet&bqrl=ZDNlZDc0MzIxNw==" target="_blank">Pesan ↗</a>
+          <a class="order-link" href="https://wa.me/6289636093623?text=Halo%20Kak%20Adityo%2C%20saya%20mau%20pesan%20Sandwich%20Telur." target="_blank">Pesan via WA ↗</a>
         </div>
       </div>
     </div>
@@ -919,7 +925,7 @@ st.markdown(html("""
         <p>Kombinasi telur dan daging yang gurih dalam roti lembut. Cocok untuk mengisi energimu.</p>
         <div class="product-bottom">
           <div class="price">Rp17.000 <small>/ porsi</small></div>
-          <a class="order-link" href="https://www.instagram.com/sanbites_san?utm_source=ig_web_button_share_sheet&bqrl=ZDNlZDc0MzIxNw==" target="_blank">Pesan ↗</a>
+          <a class="order-link" href="https://wa.me/6289636093623?text=Halo%20Kak%20Adityo%2C%20saya%20mau%20pesan%20Sandwich%20Telur%20%2B%20Daging." target="_blank">Pesan via WA ↗</a>
         </div>
       </div>
     </div>
@@ -934,7 +940,7 @@ st.markdown(html("""
   </div>
   <div class="steps">
     <div class="step reveal"><span class="num">1</span><span class="emoji">👀</span><h4>Pilih menu</h4><p>Tentukan sandwich telur atau telur + daging sesuai seleramu.</p></div>
-    <div class="step reveal"><span class="num">2</span><span class="emoji">💬</span><h4>Hubungi kami</h4><p>Kirim pesan lewat Instagram atau TikTok Sanbites.</p></div>
+    <div class="step reveal"><span class="num">2</span><span class="emoji">💬</span><h4>Hubungi kami</h4><p>Chat WhatsApp Adityo di 0896-3609-3623.</p></div>
     <div class="step reveal"><span class="num">3</span><span class="emoji">😋</span><h4>Nikmati</h4><p>Sandwich disiapkan segar, tinggal santap kapan saja.</p></div>
   </div>
 </section>
@@ -974,7 +980,7 @@ st.markdown(html("""
   </div>
   <div class="faq reveal">
     <details open><summary>Berapa harga sandwich Sanbites?</summary><p>Sandwich Telur Rp10.000 dan Sandwich Telur + Daging Rp17.000 per porsi.</p></details>
-    <details><summary>Bagaimana cara memesan?</summary><p>Hubungi kami lewat Instagram atau TikTok Sanbites, sebutkan menu dan jumlah yang kamu inginkan.</p></details>
+    <details><summary>Bagaimana cara memesan?</summary><p>Chat WhatsApp Adityo di <a href="https://wa.me/6289636093623?text=Halo%20Kak%20Adityo%2C%20saya%20mau%20pesan%20sandwich%20Sanbites." target="_blank">0896-3609-3623</a>, sebutkan menu dan jumlah yang kamu inginkan.</p></details>
     <details><summary>Apakah cocok untuk bekal?</summary><p>Tentu. Sandwich kami praktis dibawa dan mudah dimakan di sekolah, kantor, atau di perjalanan.</p></details>
   </div>
 </section>
@@ -984,9 +990,10 @@ st.markdown(html("""
     <div>
       <div class="section-kicker">Tetap terhubung</div>
       <h2>Yuk, jadi bagian dari <em>Sanbites!</em></h2>
-      <p>Ikuti akun media sosial kami untuk info menu, promo, dan kabar terbaru dari Sanbites.</p>
+      <p>Pesan lewat WhatsApp Adityo di 0896-3609-3623, atau ikuti media sosial kami untuk info menu dan promo.</p>
       <div class="btn-row" style="animation:none">
-        <a class="btn hot" href="https://www.instagram.com/sanbites_san?utm_source=ig_web_button_share_sheet&bqrl=ZDNlZDc0MzIxNw==" target="_blank">Instagram ↗</a>
+        <a class="btn wa" href="https://wa.me/6289636093623?text=Halo%20Kak%20Adityo%2C%20saya%20mau%20pesan%20sandwich%20Sanbites." target="_blank">WhatsApp Adityo ↗</a>
+        <a class="btn ghost" href="https://www.instagram.com/sanbites_san?utm_source=ig_web_button_share_sheet&bqrl=ZDNlZDc0MzIxNw==" target="_blank">Instagram ↗</a>
         <a class="btn ghost" href="https://www.tiktok.com/@sandbites1?_r=1&_t=ZS-9Bkxi5PG3rq" target="_blank">TikTok ↗</a>
       </div>
     </div>
@@ -997,6 +1004,7 @@ st.markdown(html("""
 <div class="footer">
   <b>SAN<span>BITES</span> 🥪</b><br>
   Fresh • Simple • Delicious<br>
+  💬 WhatsApp: <a href="https://wa.me/6289636093623?text=Halo%20Kak%20Adityo%2C%20saya%20mau%20pesan%20sandwich%20Sanbites." target="_blank">0896-3609-3623</a> (Adityo)<br>
   © 2026 Sanbites. Made with love and good taste.
 </div>
 """), unsafe_allow_html=True)
